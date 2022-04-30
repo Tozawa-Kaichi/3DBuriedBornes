@@ -47,7 +47,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-
         // 方向の入力を取得し、方向を求める
         float v = Input.GetAxisRaw("Vertical");
         float h = Input.GetAxisRaw("Horizontal");
@@ -82,10 +81,8 @@ public class PlayerController : MonoBehaviour
             {
                 m_jumpCount++;
                 Jump();
-
             }
         }
-
         // 接地している時のみ攻撃可能
         if (Input.GetButtonDown("Fire1") && IsGrounded())
         {
