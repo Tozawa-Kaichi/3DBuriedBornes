@@ -21,12 +21,10 @@ public class OpFade : MonoBehaviour
     {
         StartCoroutine(LoadScenes(name));
     }
-
-
     public IEnumerator LoadScenes(string name)
     {
         yield return new WaitForSeconds(waitsecond);
-        yield return new WaitUntil(() => Triger.canchangescene);
+        yield return new WaitUntil(() => Trigger.canchangescene);
         SceneManager.LoadScene(name);
     }
     public IEnumerator TitleBack(string name)

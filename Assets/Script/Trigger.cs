@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Triger : MonoBehaviour
+public class Trigger : MonoBehaviour
 {
     public static bool canchangescene = false;
     public void Trigers()
